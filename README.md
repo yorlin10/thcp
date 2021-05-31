@@ -2,4 +2,4 @@
 
 ## TODO::
 
-1. Crear proyecto en visual Studio.
+1. Crear proyecto en visual Studio
