@@ -1,0 +1,39 @@
+﻿@model IEnumerable<thcp.Models.Department>
+
+@{ 
+    ViewData["Title"] = "Departamentos";
+
+        }
+
+<h2>Lista de Departamentos </h2>
+
+
+<p>
+    <a asp-action="create" class= "btn btn-success">content</a>
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentName)
+            </th>
+            <th></th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.DepartmentName)</td>
+                <td>
+                    Borra|Edita|Detalles
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
